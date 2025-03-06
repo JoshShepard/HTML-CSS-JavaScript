@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+h3 {
+    /* Color Properties */
+    color: rgb(0, 128, 0);
+    background-color: black;
+}
+
+.test {
+    /* Fonts Properties */
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Inter, sans-serif;
+
+    /* Width and height Properties */
+    width: 100%;
+    max-width: 500px;
+    /* height: 100vh; */
+    background-color: red;
+
+    /* Border Properties */
+    border: 4px solid blue;
+    margin-bottom: 50px;
+}
+
+/* CSS Selectors (least to most specificity) Generic, Class, ID */
+#paragraph-2 {
+    color: white;
+}
+
+.paragraph-1.grey {
+    color: grey;
+}
+
+.paragraph-1 {
+    color: blue;
+}
+
+p {
+    color: green;
+}
+
+/* BOX MODEL */
+.box-model {
+    width: 200px;
+    border: 1px solid red;
+    padding: 30px 20px 50px 30px;
+    margin: 100px;
+    box-sizing: border-box;
+}
