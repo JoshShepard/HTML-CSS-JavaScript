@@ -1,0 +1,36 @@
+button {
+    transition: 300ms;
+}
+
+/*  Pseudo Class */
+button:hover {
+    opacity: 30%;
+    background-color: red;
+    padding: 4px;
+}
+
+/* Pseudo Elements - MUST HAVE CONTENT PROPERTY */
+p::before {
+    content: "Hey my name is ";
+    /* background-color: red;
+    margin: 8px; */
+}
+
+p::after {
+    content: " thanks for visiting";
+} 
+
+/* CSS Animations */
+h1 {
+    animation: pointdown 1000ms 5 alternate-reverse;
+}
+
+@keyframes pointdown {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(16px)
+    }
+}

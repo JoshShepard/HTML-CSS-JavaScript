@@ -36,10 +36,6 @@ h3 {
     color: blue;
 }
 
-p {
-    color: green;
-}
-
 /* BOX MODEL */
 .box-model {
     width: 200px;
@@ -47,4 +43,59 @@ p {
     padding: 30px 20px 50px 30px;
     margin: 100px;
     box-sizing: border-box;
+}
+
+/* POSITION */
+.title {
+    background-color: red;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.parent {
+    height: 200px;
+    background-color: green;
+    position: sticky;
+}
+
+.child {
+    width: 64px;
+    height: 64px;
+    background-color: aqua;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* MEDIA QUERIES */
+.title-media {
+    font-size: 52px;
+}
+
+.paragraph-media {
+    font-size: 24px;
+}
+
+/* Large Smartphones */
+@media (max-width: 640px) {
+    .title-media {
+        font-size: 36px;
+    }
+
+    .paragraph-media {
+        font-size: 24px;
+    }
+}
+
+/* Small Smartphones */
+@media (max-width: 480px) {
+    .title-media {
+        font-size: 32px;
+    }
+
+    .paragraph-media {
+        font-size: 20px;
+    }
 }
