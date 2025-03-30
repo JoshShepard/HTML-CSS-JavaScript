@@ -128,3 +128,17 @@ console.log('10' == 10); // True
 console.log('10' == 5); // False
 console.log(10 != '10'); // False
 console.log(10 != '5'); // True
+
+// Conditionals
+let hasMembership = true;
+let signedIn = true;
+
+// If/else if/else - if user has a membership show welcome message, else if the user is signed in but not a member instruct to upgrade memebership, else show log in or upgrade membership
+if (hasMembership && signedIn) {
+    console.log("You're a member, Welcome Back!");
+} else if (signedIn) {
+    console.log('Upgrade Membership!');
+} else {
+    console.log("Please become a member or log in to view this page!");
+}
+
