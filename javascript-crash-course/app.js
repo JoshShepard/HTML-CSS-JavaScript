@@ -142,3 +142,34 @@ if (hasMembership && signedIn) {
     console.log("Please become a member or log in to view this page!");
 }
 
+// Logical Operators (&& - AND  || - OR)
+/*
+    Logical AND (both conditionals must be true to return true)
+    ((true) && (true)) - return true
+    ((true) && (false)) - return false
+    ((false) && (true)) - return false
+    ((false) && (false)) - return false
+
+    Logical OR (one or both conditionals must be true to return true)
+    ((true) || (true)) - return true
+    ((true) || (false)) - return true
+    ((false) || (true)) - return true
+    ((false) || (false)) - return false
+*/
+
+let userAge = 20;
+let hasID = false;
+
+// AND logical operators both have to be true
+if (userAge >= 21 && hasID) {
+    console.log('You may enter the bar');
+} else {
+    console.log('You need to be older than 20 and have an ID to enter');
+}
+
+// OR logical operators one have to be true
+if (userAge >= 21 || hasID) {
+    console.log("I'm feeling nice, I only need one of these to enter");
+} else {
+    console.log("You're under 21 and don't have an ID, I cannot let you in");
+}
