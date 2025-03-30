@@ -110,9 +110,21 @@ let AUD = USD * 1.5; // Convert USD to AUD
 
 console.log(`$${USD} US Dollars to Australian dollars will be $${AUD}`);
 
-
 // Comparison Operators
 /*
     Compare two values and return true or false
-    >, <, <=, >=, ===(equal value and equal type), ==(equal to), !=(not equal), !==(not equal value or not equal type)
+    >, <, >=, <=, ===(equal value and equal type), ==(equal to), !=(not equal), !==(not equal value or not equal type)
 */
+console.log(10 > 5); // True
+console.log(10 < 5); // False
+console.log(10 >= 5); // True
+console.log(10 <= 5); // False
+console.log(10 === 5); // False
+console.log('10' === 10); // False
+console.log(10 === 10); // True
+console.log('10' !== 10) // True
+console.log(10 !== 10); // False
+console.log('10' == 10); // True
+console.log('10' == 5); // False
+console.log(10 != '10'); // False
+console.log(10 != '5'); // True
