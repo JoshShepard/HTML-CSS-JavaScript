@@ -12,7 +12,7 @@ console.log(`Hello, ${username}!`);
 
 /*
     Data Type - Numbers
-    Can be Integers, negative/positive, or double(decimal)
+    Can be Integers (negative/positive), or double(decimal)
     Perform arithmetic(+, -, *, /) 
     Follows PEMDAS
     Remainder (% - modulus)
@@ -172,4 +172,45 @@ if (userAge >= 21 || hasID) {
     console.log("I'm feeling nice, I only need one of these to enter");
 } else {
     console.log("You're under 21 and don't have an ID, I cannot let you in");
+}
+
+// FALSY VALUES - considered false when converted into a boolean
+/*
+    1. undefined
+    2. null 
+    3. NaN
+    4. 0
+    5. "" (empty string)
+    6. false
+*/
+
+if (undefined) {
+    console.log('wait, its true??');
+} else {
+    console.log('undefined is false');
+}
+
+if (null) {
+    console.log('wait, its true??');
+} else {
+    
+    console.log('null is false');
+}
+
+if (NaN) {
+    console.log('wait, its true??');
+} else {
+    console.log('Nan is false');
+}
+
+if (0) {
+    console.log('wait, its true??');
+} else {
+    console.log('0 is false');
+}
+
+if ("") {
+    console.log('wait, its true??');
+} else {
+    console.log('"" is false');
 }
