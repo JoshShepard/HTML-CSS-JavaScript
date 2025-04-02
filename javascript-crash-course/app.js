@@ -235,3 +235,25 @@ let holeInOne = true;
 let str = holeInOne ? "Congrats you have a hole in one!" : "Keep playing, you will get one eventually!";
 console.log(str);
 
+// DRY - Don't Repeat Yourself
+// LOOPS - Repeat the same block of code over and over until condition is false
+/*
+    For loops - use when iterations is known
+    While loops - use when iterations is unknown and you want a block of code to run until the condition is eventually false
+    Do While loops - use when you want the block of code to run ATLEAST once and while the condition is still true, keep running
+*/
+for (let i = 0; i <= 10; i++) {
+    console.log(i);
+}
+
+let golfHoles = 18;
+while (golfHoles > 0) {
+    console.log(`You still have ${golfHoles} holes to play!`);
+    golfHoles -= 1;
+}
+
+let number = 4;
+do {
+    number -= 1;
+    console.log(number);
+} while (number > 0);
