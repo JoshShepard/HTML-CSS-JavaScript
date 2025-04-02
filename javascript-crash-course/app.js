@@ -133,7 +133,7 @@ console.log(10 != '5'); // True
 let hasMembership = true;
 let signedIn = true;
 
-// If/else if/else - if user has a membership show welcome message, else if the user is signed in but not a member instruct to upgrade memebership, else show log in or upgrade membership
+// If/else exercise - if user has a membership show welcome message, else if the user is signed in but not a member instruct to upgrade memebership, else show log in or upgrade membership
 if (hasMembership && signedIn) {
     console.log("You're a member, Welcome Back!");
 } else if (signedIn) {
@@ -257,3 +257,15 @@ do {
     number -= 1;
     console.log(number);
 } while (number > 0);
+
+// For loop exercise - that loops through 1 to 15, if the number is odd (print "ASAP"), if the number is even (print "Frontend"), if the number is divisible by 5 (print "ASAP Frontend")
+for (let i = 1; i <= 15; i++) {
+    // divisble by 5 condition
+    if (i % 5 === 0) {
+        console.log("ASAP Frontend " + i);
+    } else if (i % 2 !== 0) { // odd condition
+        console.log("ASAP " + i);
+    } else {
+        console.log("Frontend " + i); // even condition
+    }
+}
