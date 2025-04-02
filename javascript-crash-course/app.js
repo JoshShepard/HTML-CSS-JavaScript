@@ -269,3 +269,10 @@ for (let i = 1; i <= 15; i++) {
         console.log("Frontend " + i); // even condition
     }
 }
+
+// For loop exercise #2 - Print out all the characters from the string : "ASAP Frontend"
+let loopString = "ASAP Frontend";
+
+for (let i = 0; i < loopString.length; i++) {
+    console.log(loopString[i]);
+}
