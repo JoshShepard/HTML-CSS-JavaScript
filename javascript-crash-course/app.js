@@ -214,3 +214,24 @@ if ("") {
 } else {
     console.log('"" is false');
 }
+
+// TERNARY OPERATOR - a shortcut to write and if/else statement
+// EXAMPLE - hasMembership ? "show video" : "hide video";
+// condition ? true : false;
+
+let salary = 100000;
+salary > 50000 ? console.log("Nice! You make over $50k a year") : console.log("Keep working hard to earn more money!");
+
+let isRaining = true;
+isRaining ? console.log("No tee times today, it's raining") : console.log("Weather looks great, book a tee time!");
+
+// Ternary operator exercise - if user is logged in and is a member -> show video, if user is logged out or not a member -> hide video
+let loggedIn = true;
+let isMember = true;
+
+loggedIn && isMember ? console.log('Show video') : console.log('Hide video');
+
+let holeInOne = true;
+let str = holeInOne ? "Congrats you have a hole in one!" : "Keep playing, you will get one eventually!";
+console.log(str);
+
