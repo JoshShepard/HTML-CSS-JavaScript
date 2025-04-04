@@ -277,4 +277,43 @@ for (let i = 0; i < loopString.length; i++) {
     console.log(loopString[i]);
 }
 
-// Functions 
+// Functions - reuseable blocks of code that perform a specific task
+/*
+    1. Function Declarations - starts with function keyword, name of the function, any parameters, and block of reuseable code
+        EX. function greet(name) {
+            return `Hello, ${name}`
+        }
+        console.log(greet('Josh')); // prints Hello, Josh
+
+    2. Function Expressions - Can be named or annonymous, assigned to variables
+        EX. const add = function(a, b) {
+            return a + b;
+        }
+        console.log(add(5, 10)); // prints 15
+
+    3. Arrow Functions - More concise way of writing JavaScript functions (zero parameters = (), one parameter doesn't need (), two+ parameters = ())
+        EX. const multiply = (a, b) => {
+            return a * b;    
+        }
+        console.log(multiply(5, 4)); // prints 20
+*/
+
+// Function Declaration
+function greetUser(name) {
+    console.log(`Hello, ${name}!`);
+}
+
+// Calling Function
+greetUser('Joshua');
+
+// Function Expression
+const add = function(a, b) {
+    return a + b;
+}
+console.log(add(5, 10));
+
+// Arrow Function
+const multiply = (a, b) => {
+    return a * b;
+}
+console.log(multiply(5, 10));
