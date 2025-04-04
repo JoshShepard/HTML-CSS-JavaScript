@@ -276,3 +276,5 @@ let loopString = "ASAP Frontend";
 for (let i = 0; i < loopString.length; i++) {
     console.log(loopString[i]);
 }
+
+// Functions 
