@@ -307,13 +307,13 @@ function greetUser(name) {
 greetUser('Joshua');
 
 // Function Expression
-const add = function(a, b) {
-    return a + b;
+const add = function(num1, num2) {
+    return num1 + num2;
 }
 console.log(add(5, 10));
 
 // Arrow Function
-const multiply = (a, b) => {
-    return a * b;
+const multiply = (num1, num2) => {
+    return num1 * num2;
 }
 console.log(multiply(5, 10));
