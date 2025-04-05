@@ -317,3 +317,24 @@ const multiply = (num1, num2) => {
     return num1 * num2;
 }
 console.log(multiply(5, 10));
+
+// Function Exercise - Create a function that converts $USD into $AUD (AUD = USD x 1.5)
+
+const convertUsdToAud = UsdAmount => {
+    return UsdAmount * 1.5;
+}
+
+console.log(convertUsdToAud(1000));
+console.log(convertUsdToAud(500));
+console.log(convertUsdToAud(200));
+
+function convertUSDtoAUD(dollars) {
+    return dollars * 1.5;
+}
+
+const convertAUDtoUSD = function(dollars) {
+    return dollars / 1.5;
+}
+
+console.log(convertAUDtoUSD(1500)); 
+
