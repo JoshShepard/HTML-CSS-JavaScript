@@ -327,14 +327,3 @@ const convertUsdToAud = UsdAmount => {
 console.log(convertUsdToAud(1000));
 console.log(convertUsdToAud(500));
 console.log(convertUsdToAud(200));
-
-function convertUSDtoAUD(dollars) {
-    return dollars * 1.5;
-}
-
-const convertAUDtoUSD = function(dollars) {
-    return dollars / 1.5;
-}
-
-console.log(convertAUDtoUSD(1500)); 
-
