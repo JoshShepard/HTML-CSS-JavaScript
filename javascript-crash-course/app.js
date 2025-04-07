@@ -405,3 +405,49 @@ let club3 = [20, 21, 26, 24, 20, 44, 18].filter(person => person >= 21);
 console.log(club1);
 console.log(club2);
 console.log(club3);
+
+// Without filter() method
+let people = [18, 20, 19, 21, 24, 19];
+
+let adults = [];
+
+for (let i = 0; i < people.length; i++) {
+    if (people[i] >= 21) {
+        adults.push(people[i]);
+    }
+}
+
+console.log(adults); // [21, 24]
+
+// Map Method - Iterable method, callback function, non-mutating method
+/*
+    Use .map() when we want to turn every one of our elements into something else
+*/
+let arr = [1, 2, 3, 4, 5];
+
+let map = arr.map(number => {
+    console.log(number);
+    return number + 1;
+});
+
+console.log(map);
+
+// Map Exercise - Turn each element in an array from USD to AUD (AUD = USD * 1.5)
+let arr1 = [10, 20, 30, 40]; // => [15, 30, 45, 60]
+let map1 = arr1.map(USD => {
+    return USD * 1.5;
+});
+console.log(map1);
+
+// Using Shorthand syntax
+let arr2 = [100, 150, 35]; // => [150, 225, 52.5]
+let map2 = arr2.map(USD => USD * 1.5);
+console.log(map2);
+
+// without using .map() method
+let usDollars = [1000, 2000, 3000, 4000] // => [1500, 3000, 4500, 6000]
+let auDollars = [];
+for (let i = 0; i < usDollars.length; i++) {
+    auDollars.push(usDollars[i] * 1.5);
+}
+console.log(auDollars);
