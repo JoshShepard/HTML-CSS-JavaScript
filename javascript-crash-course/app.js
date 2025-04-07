@@ -327,3 +327,81 @@ const convertUsdToAud = UsdAmount => {
 console.log(convertUsdToAud(1000));
 console.log(convertUsdToAud(500));
 console.log(convertUsdToAud(200));
+
+// - Data Structures -
+/*
+    Arrays - Data structure that lets you store multiple data values in a single variable
+        0 based indexing
+*/ 
+
+// Different data types
+let array = ['String', 123, []];
+
+// for (let i = 0; i < array.length; i++) {
+//     console.log(array[i]);
+// }
+
+// Inserting values into an array
+let shoppingList = ['Apples', 'Bananas', 'Eggs', 'Milk'];
+//console.log(shoppingList);
+
+// adding element to end of array using the array.push(*value*) method, mutating method - actually changing the original array
+shoppingList.push('Cheese');
+//console.log(shoppingList);
+
+// Filter out certain conditions we give it using array.filter() (Callback function) - non-mutating method - does not change the original array
+/*
+    array.filter(() => {}); // syntax
+
+    if element passes the filter(true value) it will stay within the array, if element does not pass the filter(false value) it will be removed from array
+    ITERABLE METHOD - access each element one by one
+*/
+
+let filterArray = shoppingList.filter(item => {
+    return item[0] === 'A' ? true : false;
+});
+
+console.log(filterArray);
+
+// Hard coded prices for items, filter items $15 or higher into filtered array
+/*
+    Since filter method makes a copy of the original array, storing the results to a variable called priceFilter
+    to be able to see the returning array with items greater or equal to $15
+*/
+let price = [15, 20, 5, 7];
+
+let priceFilter = price.filter(price => {
+    // if (price >= 15) {
+    //     return true;
+    // } else {
+    //     return false;
+    // }
+
+    // ternary practice
+    // return price >= 15 ? true : false;
+
+    // cleanest way - return condition boolean value
+    return price >= 15;
+});
+
+// Shorthand syntax
+/*
+    let priceFilter = price.filter(price => price >= 15);
+*/
+
+console.log(priceFilter);
+
+// Array Exercise - Night Club Exercise
+// Filter out all the people who are not 21+ years old
+// EX. 
+// [18, 27, 16, 19, 34, 21, 30] => [27, 34, 21, 30]
+// [16, 18, 14, 52, 80, 32, 44] => [52, 80, 32, 44]
+// [20, 21, 26, 24, 20, 44, 18] => [21, 26, 24, 44]
+
+let club1 = [18, 27, 16, 19, 34, 21, 30].filter(person => person >= 21);
+let club2 = [16, 18, 14, 52, 80, 32, 44].filter(person => person >= 21);
+let club3 = [20, 21, 26, 24, 20, 44, 18].filter(person => person >= 21);
+
+console.log(club1);
+console.log(club2);
+console.log(club3);
