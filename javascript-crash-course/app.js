@@ -451,5 +451,3 @@ for (let i = 0; i < usDollars.length; i++) {
     auDollars.push(usDollars[i] * 1.5);
 }
 console.log(auDollars);
-
-// Objects - Data Structure that lets you store multiple properties in a single variable
